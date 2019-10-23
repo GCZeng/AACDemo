@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="user"
+            type="org.zgc.aac.bean.entity.User" />
+
+    </data>
+
+    <EditText
+        android:id="@+id/tv_content_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入你的简介"
+        android:padding="10dp"
+        android:text="@={user.intro}" />
+
+</layout>
